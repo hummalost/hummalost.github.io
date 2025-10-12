@@ -18,11 +18,10 @@
       <div class="logo">A1 | Informatics Engineering</div>
       <nav>
         <ul>
-          <li><a href="#" class="active">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#" class="active">Beranda</a></li>
+          <li><a href="#about">Tentang</a></li>
+          <li><a href="#fakultas">Fakultas</a></li>
+          <li><a href="#social">Media Sosial</a></li>
         </ul>
       </nav>
     </div>
@@ -34,12 +33,12 @@
       <h2>Future Innovators in Progress ⚙️</h2>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, ea laudantium dolorum beatae vitae quae aperiam, magnam delectus illum voluptate corrupti. Cupiditate non quisquam ex.</p>
       <div class="buttons">
-        <a href="#contact" class="btn outline">Let's Talk</a>
+        <a href="#about" class="btn outline">Explores now!</a>
       </div>
       <div class="socials">
-        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://wa.me/6289513078512" target="blank" aria-label="whatsapp"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.instagram.com/aone.engineering/" target="blank" aria-label="instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.tiktok.com/@aone.engineering" target="blank" aria-label="tiktok"><i class="fab fa-tiktok"></i></a>
       </div>
     </div>
     <div class="hero-image">
@@ -51,8 +50,8 @@
   <h2 class="about-title">About</h2>
   <div class="about-content">
     <div class="about-item">
-  <img src="https://drive.google.com/file/d/1ZSdKv6oEZjq-J1QEm8jd2Nq9n3BzPBQz/view?usp=drive_link" class="img-1"alt="Logo Teknik Informatika FIKSI A1" />
-  <div class="about-text">
+  <img src="assets/img/logo.jpg" class="img-1"alt="Logo Teknik Informatika FIKSI A1" />
+  <div class="about-text" >
     <h3>Tentang Kelas A1</h3>
     <p>
       Kelas A1 Teknik Informatika merupakan kelompok mahasiswa yang memiliki
@@ -60,7 +59,7 @@
       berfokus pada pembelajaran modern yang kreatif, kolaboratif, dan
       inovatif untuk membentuk generasi digital masa depan.
     </p>
-    <a href="kelasA1.html" class="btn-see-more">Lihat Selengkapnya</a>
+    <a href="kelasA1.html" id="about-1" class="btn-see-more">Lihat Selengkapnya</a>
   </div>
 </div>
 
@@ -83,7 +82,7 @@
   </div>
 </section>
 
-<section class="carousel-container">
+<section class="carousel-container" id="fakultas">
   <div class="carousel-slide active">
     <div class="carousel-content">
       <div class="text">
@@ -99,7 +98,7 @@
         </p>
       </div>
       <div class="image">
-        <img src="logo1.png" alt="Logo Prodi Teknik Informatika">
+        <img src="logo.jpg" alt="Logo Prodi Teknik Informatika">
       </div>
     </div>
   </div>
@@ -134,22 +133,22 @@
 
   <div class="social-container">
 
-    <div class="social-card" onclick="showConfirmation('Instagram', '//www.instagram.com/fiksi.a1')">
+    <div class="social-card" onclick="showConfirmation('Instagram', '//www.instagram.com/aone.engineering/')">
   <i class="fa-brands fa-instagram"></i>
   <h3>Instagram</h3>
-  <p>@fiksi.a1</p>
+  <p>@aone.engineering</p>
 </div>
 
-<div class="social-card" onclick="showConfirmation('TikTok', '//www.tiktok.com/@printingbyhadi/video/7532753826256801025')">
+<div class="social-card" onclick="showConfirmation('TikTok', '//www.tiktok.com/@aone.engineering')">
   <i class="fa-brands fa-tiktok"></i>
   <h3>TikTok</h3>
   <p>@printingbyhadi</p>
 </div>
     
-    <div class="social-card contact-card" onclick="showConfirmation('WhatsApp Admin', '//wa.me/6281234567890')">
+    <div class="social-card contact-card">
       <i class="fa-solid fa-phone"></i>
       <h3>Admin Contact</h3>
-      <p>+62 812-3456-7890</p>
+      <p>+62 895=1307-8512</p>
     </div>
   </div>
 </section>
@@ -273,7 +272,7 @@ document.addEventListener("DOMContentLoaded", () => {
 </script>
 
 <style>
-:root {
+  :root {
   --primary-bg: #0a1a2f;
   --accent: #d4af37;
   --text-light: #f0f0f0;
@@ -285,6 +284,8 @@ document.addEventListener("DOMContentLoaded", () => {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
+  border: 2px solid red;
 }
 /* Hilangkan scrollbar tapi tetap bisa scroll */
 html, body {
@@ -471,6 +472,7 @@ nav a.active::after {
   max-width: 100%;
   height: auto;
   border-radius: 16px;
+  filter: drop-shadow(0 0 40px rgba(212, 175, 55, 0.3));
 }
 
 /* Responsive */
@@ -510,8 +512,7 @@ nav a.active::after {
 .about {
   background-color: #0a1b3f;
   color: #fff;
-  min-height: 100vh; /* penuh layar */
-  padding: 6rem 8%;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -922,5 +923,4 @@ nav a.active::after {
 .next {
   right: 40px;
 }
-
 </style>
