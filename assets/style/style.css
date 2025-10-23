@@ -201,7 +201,6 @@ nav a.active::after {
   width: 360px;
   max-width: 100%;
   height: auto;
-
   border-radius: 16px;
 }
 
