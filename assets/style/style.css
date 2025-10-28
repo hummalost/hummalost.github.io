@@ -645,11 +645,14 @@ nav a.active::after {
     transform: translateX(-3vh);
   }
   .hero-content h1{
-    transform: translateX(-22px);
-
+    transform: translateY(-10px);
+    position: relative;
+    right: 21px;
   }
   .hero-content h2{
-    transform: translateX(-22px);
-
+    transform: translateY(-10px);
+    position: relative;
+    right: 21px;
+    
   }
 }
