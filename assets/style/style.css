@@ -626,3 +626,17 @@ nav a.active::after {
 
   }
 }
+
+@media (max-width: 360px){
+  .hero-image{
+    transform: translateX(-3vh);
+  }
+  .hero-content h1{
+    transform: translateX(-25px);
+
+  }
+  .hero-content h2{
+    transform: translateX(-25px);
+
+  }
+}
