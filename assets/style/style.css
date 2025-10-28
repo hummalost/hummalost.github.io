@@ -613,7 +613,7 @@ nav a.active::after {
   }
 }
 
-@media (max-width: 390px){
+@media (max-width: 400px){
   .hero-image{
     transform: translateX(-1vh);
   }
