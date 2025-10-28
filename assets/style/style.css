@@ -640,3 +640,16 @@ nav a.active::after {
 
   }
 }
+@media (max-width: 380px){
+  .hero-image{
+    transform: translateX(-3vh);
+  }
+  .hero-content h1{
+    transform: translateX(-22px);
+
+  }
+  .hero-content h2{
+    transform: translateX(-22px);
+
+  }
+}
