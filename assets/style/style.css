@@ -480,13 +480,13 @@ nav a.active::after {
   .hero-image{
     width: 300px;
     z-index: 20;
-    transform: translateY(-10vh);
+    transform: translateY(-5vh);
   }
 
   .hero-content{
     z-index: 22;
     position:relative;
-    transform: translateY(-32vh);
+    transform: translateY(-22vh);
     font-size: 15px;
   }
   .hero-content p{
@@ -496,7 +496,7 @@ nav a.active::after {
     width: 100%;
     z-index: 1;
     position:relative;
-    transform: translateY(-50vh);
+    transform: translateY(-30vh);
     
   }
   .goals-content{
@@ -546,7 +546,7 @@ nav a.active::after {
   }
 
   .about{
-    transform: translateY(-70vh);
+    transform: translateY(-50vh);
   }
 
   .about-item.reverse img {
@@ -580,7 +580,7 @@ nav a.active::after {
   }
   .carousel-container{
     position:relative;
-    bottom : 35vh;
+    bottom : 15vh;
   }
   .carousel-content {
     flex-direction: column; 
@@ -595,7 +595,10 @@ nav a.active::after {
   .carousel-btn{
     margin-top: 145px;
   }
+  .social-section{
+    transform: translateY(-20vh);
 
+  }
  
 }
    
@@ -604,5 +607,22 @@ nav a.active::after {
   .about-image img {
     width: 70%;
     max-width: 200px;
+  }
+  .hero{
+    
+  }
+}
+
+@media (max-width: 390px){
+  .hero-image{
+    transform: translateX(-1vh);
+  }
+  .hero-content h1{
+    transform: translateX(-11px);
+
+  }
+  .hero-content h2{
+    transform: translateX(-11px);
+
   }
 }
